@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스터디온 | 온라인 학습 일정 관리</title>
+</head>
+<body>
+    <!--
+    1주차의 기본 HTML 문서에 서비스 소개 구조를 확장했습니다.
+    사용자: 일과 학업을 병행하며 온라인 강의를 수강하는 대학생
+    목적: 강의와 과제 일정을 한곳에서 확인하고 학습 계획을 세우도록 돕는다.
+    핵심 행동: 서비스를 이해한 뒤 관심 과목과 주간 학습 목표를 입력한다.
+    정보 순서: 서비스 이름과 한 줄 소개 → 서비스 소개와 이미지 → 주요 기능 3개
+               → 이용 방법 3단계 → 학습 목표 입력 → 하단 정보
+    -->
+    <header id="top">
+        <h1>스터디온</h1>
+        <p>바쁜 하루에도 놓치지 않는 나의 온라인 학습 계획</p>
+        <nav aria-label="페이지 내부 메뉴">
+            <ul>
+                <li><a href="#about">서비스 소개</a></li>
+                <li><a href="#features">주요 기능</a></li>
+                <li><a href="#steps">이용 방법</a></li>
+                <li><a href="#start">학습 목표 입력</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>서비스 소개</h2>
+            <p>스터디온은 온라인 강의와 과제 일정을 한곳에서 관리하도록 돕는 학습 계획 서비스입니다.</p>
+            <p>일과 학업을 병행하는 학생이 이번 주 할 일을 확인하고, 작은 목표부터 꾸준히 실천할 수 있도록 기획했습니다.</p>
+            <figure>
+                <img src="assets/images/service.svg" width="320" height="200"
+                     alt="스터디온 학습 계획 예시: 월요일 강의 듣기, 수요일 실습하기, 금요일 과제 확인하기">
+                <figcaption>스터디온의 주간 학습 계획 예시</figcaption>
+            </figure>
+        </section>
+        <section id="features">
+            <h2>주요 기능</h2>
+            <ul>
+                <li>
+                    <h3>강의 일정 모아보기</h3>
+                    <p>과목별 수강 일정과 이번 주 학습할 내용을 한눈에 확인합니다.</p>
+                </li>
+                <li>
+                    <h3>과제 마감일 확인</h3>
+                    <p>제출 기한과 준비할 자료를 함께 정리해 과제를 미리 준비합니다.</p>
+                </li>
+                <li>
+                    <h3>학습 목표 관리</h3>
+                    <p>일주일 동안 실천할 목표를 세우고 학습 진행 상황을 점검합니다.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="steps">
+            <h2>이용 방법</h2>
+            <ol>
+                <li>관심 과목과 이번 주 학습 목표를 정합니다.</li>
+                <li>강의 일정과 과제 마감일을 기준으로 학습 계획을 세웁니다.</li>
+                <li>계획을 실천하고 주말에 완료한 내용을 확인합니다.</li>
+            </ol>
+        </section>
+        <section id="start">
+            <h2>학습 목표 입력</h2>
+            <p id="form-note">관심 과목과 목표를 적어보세요. 이 소개 페이지의 입력 내용은 저장되거나 전송되지 않습니다.</p>
+            <form aria-describedby="form-note">
+                <p>
+                    <label for="subject">관심 과목</label>
+                    <input type="text" id="subject" name="subject" placeholder="예: UI/UX프로그래밍">
+                </p>
+                <p>
+                    <label for="goal">이번 주 학습 목표</label><br>
+                    <textarea id="goal" name="goal" rows="3" cols="30" placeholder="예: 강의를 듣고 서비스 소개 페이지 완성하기"></textarea>
+                </p>
+                <button type="reset">다시 입력</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>스터디온 | UI/UX프로그래밍 서비스 소개 실습</p>
+        <a href="#top">맨 위로 이동</a>
+    </footer>
+</body>
+</html>
